@@ -1,0 +1,48 @@
+ <html>
+<head>
+<h1>employee database</h1>
+<!-- </head>
+<body>
+firstname<input type='text' name="first name">
+lastname<input type='text' name="last name">
+city<input type='text' name="city">
+<input type='button' name="submit" value='submit'> 
+</body>
+</html>
+  -->
+
+
+
+
+
+
+
+
+
+ <%=form_for @employee do|f|%>
+
+ <div class="form-group">
+ <%=f.label :firstname%>
+ <%=f.text_field :firstname%>
+ </div>
+
+
+ <div class="form-group">
+ <%=f.label :lastname%>
+ <%=f.text_field :lastname%>
+ </div>
+  
+<div class="form-group">
+ <%=f.label :city%>
+ <%=f.text_field :city%>
+ </div>
+
+ 
+ <%=f.submit "submit"%>
+ <%end%>
+  
+  
+
+
+
+
